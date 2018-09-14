@@ -32,6 +32,8 @@ CREATE TABLE `alternatename` (
   `isShortName` tinyint(1) DEFAULT NULL,
   `isColloquial` tinyint(1) DEFAULT NULL,
   `isHistoric` tinyint(1) DEFAULT NULL,
+  `yearFrom` varchar(255) DEFAULT NULL,
+  `yearTo` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`alternatenameId`),
   KEY `geonameid` (`geonameid`),
   KEY `isoLanguage` (`isoLanguage`),
