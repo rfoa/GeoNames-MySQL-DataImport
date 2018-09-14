@@ -8,7 +8,7 @@ SELECT '########## Loading alternateNames.txt... ##########';
 LOAD DATA LOCAL INFILE 'data/alternateNames.txt'
 INTO TABLE alternatename
 CHARACTER SET 'utf8mb4'
-(alternatenameid, geonameid, isoLanguage, alternateName, isPreferredName, isShortName, isColloquial, isHistoric);
+(alternatenameid, geonameid, isoLanguage, alternateName, isPreferredName, isShortName, isColloquial, isHistoric, yearFrom, yearTo);
 
 SELECT '########## Loading iso-languagecodes.txt... ##########';
 LOAD DATA LOCAL INFILE 'data/iso-languagecodes.txt'
